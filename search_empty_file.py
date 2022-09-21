@@ -44,7 +44,7 @@ def check_file_f(target_dirs, i):
 def main():
     root_point_dirs = glob.glob('./dirs/[0-F]')
     future_results = []
-    with futures.ThreadPoolExecutor(max_workers=8) as executor:
+    with futures.ThreadPoolExecutor(ARGS.max_workers) as executor:
         for root_point_dir in root_point_dirs:
             root_point = root_point_dir.split('/')[-1]
             future = executor.submit(get_target_d, f'{root_point}')
