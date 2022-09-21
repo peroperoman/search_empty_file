@@ -1,5 +1,4 @@
 import argparse
-from ast import arg
 import glob
 import logging
 import os
