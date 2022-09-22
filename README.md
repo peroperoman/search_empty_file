@@ -1,7 +1,7 @@
 # 空ファイル並列捜索テスト
 
 ```
-usage: gen.py [-h] [--max_workers MAX_WORKERS] [--non_empty]
+usage: search_empty_file.py [-h] [--max_workers MAX_WORKERS] [--non_empty]
 
 Find an empty file with parallel processing.
 
